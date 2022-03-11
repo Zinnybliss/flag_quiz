@@ -13,7 +13,8 @@ function allCode(){
 let correctAnswer = ""
 let aNewOption = []
 for (let i = 0; i < newButton.length; i += 1)
-{    
+{ 
+   newButton[i].checked=false;   
    const randomButton = Math.floor(Math.random()*countryWithImages.length)
 const allButton = countryWithImages[randomButton].name
 const butButton = countryWithImages[randomButton].file_url
