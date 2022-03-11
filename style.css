@@ -1,0 +1,31 @@
+*{
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin-left: 500px;
+}
+p{
+    margin-left: 500px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+    padding: 20px;
+
+}
+
+button{
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 500px;
+
+}
+.btn{
+    margin-left: 500px;
+    padding: 5px;
+}
