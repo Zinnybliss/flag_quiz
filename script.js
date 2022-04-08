@@ -4,14 +4,14 @@
  
 
 
-btnElement.addEventListener("click", function(e){
-   allCode()
-})
+btnElement.addEventListener("click", allCode)
+
 const newButton = document.querySelectorAll("input")
 
-function allCode(){
+function allCode(e){
 let correctAnswer = ""
 let aNewOption = []
+answerElement.textContent = ""
 for (let i = 0; i < newButton.length; i += 1)
 { 
    newButton[i].checked=false;   
@@ -30,12 +30,15 @@ aNewOption.push(genButton)
 if (allTrue === correctAnswer){
    console.log(true)
    answerElement.textContent = "Yaay! you are right"
+   answerElement.style.color="green";
    
 }
 else{
    console.log (false)
    answerElement.textContent = "Ouch! you are wrong"
+   answerElement.style.color="red";
 }
+
 
    })
 newButton[i].value = allButton
